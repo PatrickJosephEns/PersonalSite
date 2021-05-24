@@ -7,8 +7,7 @@ const App = () =>  {
   return (  
 
     <React.Fragment>
-    <Navbar /> 
-    
+    <Navbar />   
     <Routes/>
     </React.Fragment>
     
