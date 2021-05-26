@@ -1,8 +1,15 @@
+import Carousel from '../Carousel'
+import Footer from '../footer/Footer'
+
 function Home() {
 
   return (
     <div >
-        <h1>My Personal Site</h1>        
+        <Carousel />
+          <div>
+          
+          </div>    
+        <Footer /> 
     </div>
   );
 }
