@@ -21,7 +21,7 @@ function NavBar()  {
           <a class="dropdown-item" href="http://localhost:3000/content">New Arrivals</a>
           <a class="dropdown-item" href="#">Another action</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Contact Us</a>
+          <a class="dropdown-item" href="http://localhost:3000/contact">Contact Us</a>
         </div>
       </li>
       <li class="nav-item">

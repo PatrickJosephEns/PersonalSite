@@ -6,10 +6,6 @@ import React from 'react';
 
 
 
-// import "bootstrap/dist/css/bootstrap.min.css";
-
-
-
 const Routes = () =>  {
   return (   
     <BrowserRouter>   
@@ -17,7 +13,7 @@ const Routes = () =>  {
       <div className = "App">       
         <Route path="/" component = {home} exact />
         <Route path="/content" component = {content} exact />
-        <Route path="/about" component = {contact} exact />
+        <Route path="/contact" component = {contact} exact />
       </div>
     </Switch>
     </BrowserRouter>
