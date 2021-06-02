@@ -1,7 +1,7 @@
 import  {Route, Switch, BrowserRouter} from 'react-router-dom';
 import home from './components/pages/home';
 import content from './components/pages/content';
-import about from './components/pages/about';
+import contact from './components/pages/contact';
 import React from 'react';
 
 
@@ -17,7 +17,7 @@ const Routes = () =>  {
       <div className = "App">       
         <Route path="/" component = {home} exact />
         <Route path="/content" component = {content} exact />
-        <Route path="/about" component = {about} exact />
+        <Route path="/about" component = {contact} exact />
       </div>
     </Switch>
     </BrowserRouter>
