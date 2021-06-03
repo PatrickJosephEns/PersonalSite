@@ -6,23 +6,24 @@ const { response } = require('express');
 
 const app = express();
 
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
 
 app.get('/',()=>{
-    resizeBy.semd('Welcome to my forma')
+    resizeBy.send('Welcome to my forma')
 })
 
 app.post('/api/forma',(req,res)=>{
     let data = req.body
     let smtpTransport = nodemailer.createTransport({
-        service:'Gmail',
+        service:'mailtrap',
         port:465,
         auth:{
-            user:'patens6@gmail.com',
-            pass:'GoogSurfing101'
+            user:'542802fc88db92',
+            pass:'ed1c610eb05bd9'
         }
     })
 
@@ -41,8 +42,7 @@ let mailOptions={
 
     <h3>Message</h3>
     <p>${data.message}</p>
-    
-    
+       
     `
 }
 

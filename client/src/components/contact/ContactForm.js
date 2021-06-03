@@ -88,7 +88,7 @@ restForm=()=>{
             <div class="contact-image">
                 <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
             </div>
-            <form onSubmit={this.formSubmit} method="post">
+            <form onSubmit={this.formSubmit}>
                 <h3>Drop Us a Message</h3>
                <div class="row">
                     <div class="col-md-6">
