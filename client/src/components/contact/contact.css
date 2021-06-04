@@ -51,3 +51,13 @@
     border: none;
     cursor: pointer;
 }
+
+.msg{
+    font-style: italic;
+    font-size: 100px;
+    display: none;
+}
+
+.msgAppear{
+    display:block
+}

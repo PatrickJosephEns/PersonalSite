@@ -13,7 +13,7 @@ function NavBar()  {
         <a class="nav-link" href="http://localhost:3000/">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Collections
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">

@@ -3,10 +3,6 @@ import './contact.css'
 
 import axios from 'axios'
 
-
-
-
-
 export default class ContactForm extends Component {
 
 state={
@@ -15,7 +11,6 @@ state={
     email:'',
     message:'',
     sent:false
-
 }
 
 //handle inputs
@@ -59,8 +54,8 @@ formSubmit=(e)=>{
         this.setState({
             sent:true
         },this.resetForm())
-    }).catch(()=>{
-        console.log('message not sent');
+    }).catch(err =>{
+        console.log('message not sent')
     })
 }
 
@@ -85,9 +80,9 @@ restForm=()=>{
     render() {
         return (
 <div class="container contact-form">
-            <div class="contact-image">
+            {/* <div class="contact-image">
                 <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
-            </div>
+            </div> */}
             <form onSubmit={this.formSubmit}>
                 <h3>Drop Us a Message</h3>
                <div class="row">
@@ -136,6 +131,7 @@ restForm=()=>{
                     </div>
                     
                 </div>
+
                 <div className={this.state.sent ?'msg msgAppear':'msg'}>Message has been sent</div>
             </form>
 </div>
