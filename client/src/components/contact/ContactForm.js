@@ -51,6 +51,8 @@ formSubmit=(e)=>{
 
     axios.post('/api/forma',data)
     .then(res=>{
+        console.log('Email successfully sent!')
+        alert("Your email has been sent! We will be in touch ASAP!");
         this.setState({
             sent:true
         },this.resetForm())
@@ -111,12 +113,7 @@ restForm=()=>{
                             value={this.state.email}
                             onChange={this.handleEmail} />
                         </div>
-                        <div class="form-group">
-                            <input type="submit" 
-                            name="btnSubmit" 
-                            class="btnContact" 
-                            value="Send" />
-                        </div>
+                        
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
@@ -128,11 +125,12 @@ restForm=()=>{
                             value={this.state.message}
                             onChange={this.handleMessage}></textarea>
                         </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </div>
                     </div>
                     
                 </div>
-
-                <div className={this.state.sent ?'msg msgAppear':'msg'}>Message has been sent</div>
             </form>
 </div>
         )
