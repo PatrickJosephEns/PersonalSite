@@ -5,12 +5,10 @@ import Navbar from './components/Navbar';
 
 const App = () =>  {
   return (  
-
     <React.Fragment>
     <Navbar />   
     <Routes/>
-    </React.Fragment>
-    
+    </React.Fragment>  
   )
 }
 
