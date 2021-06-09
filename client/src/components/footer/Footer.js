@@ -64,8 +64,7 @@ function Footer() {
         <div class='social-media-wrap'>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
-              pat
-              <i class="fab fa-angellist"></i>
+              patens
             </Link>
           </div>
           <small class='website-rights'>patens © 2021</small>
@@ -80,15 +79,14 @@ function Footer() {
             </Link>
             <Link
               class='social-icon-link instagram'
-              to='/'
-              target='_blank'
+              to='//www.instagram.com/patrick.ens/?hl=en'
               aria-label='Instagram'
             >
               <i class='fab fa-instagram' />
             </Link>
             <Link
               class='social-icon-link youtube'
-              to='/'
+              to='//youtube.com/c/patrickens'
               target='_blank'
               aria-label='Youtube'
             >

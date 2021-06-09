@@ -48,7 +48,7 @@ formSubmit=(e)=>{
         email:this.state.email,
         message:this.state.message
     }
-
+    
     axios.post('/api/forma',data)
     .then(res=>{
         console.log('Email successfully sent!')
@@ -62,7 +62,7 @@ formSubmit=(e)=>{
 }
 
 //reseting initial data
-restForm=()=>{
+resetForm=()=>{
     this.setState({
         name:'',
         lastname:'',
@@ -126,7 +126,7 @@ restForm=()=>{
                             onChange={this.handleMessage}></textarea>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary">Send</button>
+                            <button class="btn btn-primary">Send</button>
                         </div>
                     </div>
                     
