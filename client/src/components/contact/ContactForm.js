@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './contact.css'
-
 import axios from 'axios'
+import '../../contact'
 
 export default class ContactForm extends Component {
 
