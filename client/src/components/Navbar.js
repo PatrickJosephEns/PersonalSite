@@ -18,7 +18,7 @@ function NavBar()  {
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="http://localhost:3000/content">New Arrivals</a>
-          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Another page</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="http://localhost:3000/contact">Contact Us</a>
         </div>
